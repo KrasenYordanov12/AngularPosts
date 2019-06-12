@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularAlbums": {
+    "AngularPosts": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularAlbums",
+            "outputPath": "dist/AngularPosts",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularAlbums:build"
+            "browserTarget": "AngularPosts:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularAlbums:build:production"
+              "browserTarget": "AngularPosts:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularAlbums:build"
+            "browserTarget": "AngularPosts:build"
           }
         },
         "test": {
@@ -105,15 +105,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularAlbums:serve"
+            "devServerTarget": "AngularPosts:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularAlbums:serve:production"
+              "devServerTarget": "AngularPosts:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "AngularAlbums"
+  "defaultProject": "AngularPosts"
 }
